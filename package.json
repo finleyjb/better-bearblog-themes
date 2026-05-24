@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "postcss themes/default.css -o dist/themes/default.css --no-map"
   },
   "keywords": [],
   "author": "",
@@ -12,12 +12,21 @@
   "devEngines": {
     "packageManager": {
       "name": "pnpm",
-      "version": "11.1.2",
+      "version": "11.3.0",
       "onFail": "download"
     }
   },
   "type": "module",
   "devDependencies": {
-    "@biomejs/biome": "2.4.15"
-  }
+    "@biomejs/biome": "2.4.15",
+    "postcss": "^8.5.15",
+    "postcss-cli": "^11.0.1",
+    "postcss-import": "^16.1.1",
+    "postcss-load-config": "^6.0.1",
+    "postcss-preset-env": "^11.3.0",
+    "postcss-safe-parser": "^7.0.1"
+  },
+  "browserslist": [
+    "baseline widely available with downstream and not dead"
+  ]
 }
