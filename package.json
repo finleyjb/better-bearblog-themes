@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "postcss themes/default.css -o dist/themes/default.css --no-map"
+    "build": "pnpm run '/^build:.*/'",
+    "build:default": "postcss themes/default/ -d dist/themes/default/ --no-map"
   },
   "keywords": [],
   "author": "",
