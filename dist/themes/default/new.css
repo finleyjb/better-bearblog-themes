@@ -6,7 +6,7 @@
 
 :root,
 :host {
-  --width: 720px;
+  --width: min(800px, calc(70% + 100px));
   --font-main: system-ui, sans-serif;
   --font-secondary:
     Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro,
