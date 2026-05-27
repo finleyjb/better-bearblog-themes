@@ -7,8 +7,10 @@
 :root,
 :host {
   --width: 720px;
-  --font-main: Verdana, sans-serif;
-  --font-secondary: Verdana, sans-serif;
+  --font-main: system-ui, sans-serif;
+  --font-secondary:
+    Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro,
+    sans-serif;
   --font-scale: 1em;
 }
 
