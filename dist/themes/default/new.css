@@ -87,6 +87,7 @@ h5,
 h6 {
   font-family: var(--font-main);
   color: var(--heading-color);
+  line-height: 1.1;
 }
 
 a {
