@@ -11,9 +11,18 @@
   --font-secondary:
     Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro,
     sans-serif;
-  --font-scale: 1em;
-}
 
+  /*
+   * Calculated by https://fluidtypography.com/
+   *
+   * Settings:
+   *  Viewport range: 320px - 1920px;
+   *  Font size range: 18px - 24px;
+   *  Line height range: 1.4 - 1.6
+   */
+  --font-scale: clamp(1.125rem, 0.375vw + 1.05rem, 1.5rem);
+  --line-height: clamp(1.487rem, 0.913vw + 1.305rem, 2.4rem);
+}
 @media (prefers-color-scheme: light) {
   :root {
     --background-color: oklch(0.95 0.0333 221.15);
@@ -116,7 +125,7 @@ time {
 }
 
 main {
-  line-height: 1.6;
+  line-height: var(--line-height);
 }
 
 table {
