@@ -6,6 +6,10 @@ export default function (ctx) {
       "postcss-import": { root: ctx.file.dirname },
       autoprefixer: {},
       "postcss-preset-env": {},
+      cssnano:
+        ctx.env === "production"
+          ? { preset: ["default", { calc: false }] }
+          : false,
     },
   };
 }

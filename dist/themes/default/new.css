@@ -35,7 +35,7 @@
     --code-color: oklch(0.252 0 0);
     --blockquote-color: oklch(0.252 0 0);
     --blockquote-accent-color: oklch(0.499121 0.098438 20);
-    --mark-color: oklch(0.487988 0.098438 90);
+    --mark-color: oklch(0.67478 0.1375 90);
   }
   .highlight pre span.nt {
     color: oklch(0.42 0.08 250);

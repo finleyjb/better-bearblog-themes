@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "pnpm run '/^build:.*/'",
-    "build:default": "postcss themes/default/*.css -d dist/themes/default/ --no-map"
+    "build:default": "postcss themes/default/*.css -d dist/themes/default/ --no-map",
+    "build:prod:default": "postcss --env production themes/default/*.css -d dist/themes/default/prod --no-map"
   },
   "keywords": [],
   "author": "",
@@ -20,6 +21,7 @@
   "type": "module",
   "devDependencies": {
     "@biomejs/biome": "2.4.15",
+    "cssnano": "^8.0.1",
     "postcss": "^8.5.15",
     "postcss-cli": "^11.0.1",
     "postcss-import": "^16.1.1",
